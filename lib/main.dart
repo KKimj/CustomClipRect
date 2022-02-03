@@ -32,8 +32,7 @@ class CustomClipRectImage extends StatelessWidget {
           child: ClipRect(
         // Input value
         clipper: const CustomClipRect(left: 0, top: 0, right: 0, bottom: 0),
-        child: Image.network(
-            "https://media.istockphoto.com/photos/harvest-moon-picture-id157328796?k=20&m=157328796&s=612x612&w=0&h=yQXlTV_b2JgvkHNZ4ZKggWEwMMgUuE9K4YI_eTXrFh4="),
+        child: Image.network("https://wallpaperaccess.com/full/109666.jpg"),
       )),
     );
   }
