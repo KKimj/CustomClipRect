@@ -37,6 +37,7 @@ class CustomClipRectImage extends StatelessWidget {
       ),
       body: Center(
         child: SizedOverflowBox(
+          key: GlobalKey(),
           size: const Size(0, 0),
           child: ClipRect(
             // Input value
