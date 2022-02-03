@@ -20,16 +20,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class CustomClipRectImage extends StatefulWidget {
-  const CustomClipRectImage({
-    Key? key,
-  }) : super(key: key);
+class CustomClipRectImage extends StatelessWidget {
+  const CustomClipRectImage({Key? key}) : super(key: key);
 
-  @override
-  State<CustomClipRectImage> createState() => _CustomClipRectImageState();
-}
-
-class _CustomClipRectImageState extends State<CustomClipRectImage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +32,7 @@ class _CustomClipRectImageState extends State<CustomClipRectImage> {
       body: Center(
           child: ClipRect(
         // Input value
-        clipper: CustomClipRect(left: 0, top: 0, right: 0, bottom: 0),
+        clipper: const CustomClipRect(left: 0, top: 0, right: 0, bottom: 0),
         child: Image.network(
             "https://media.istockphoto.com/photos/harvest-moon-picture-id157328796?k=20&m=157328796&s=612x612&w=0&h=yQXlTV_b2JgvkHNZ4ZKggWEwMMgUuE9K4YI_eTXrFh4="),
       )),
