@@ -27,7 +27,7 @@ class CustomClipRectImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("CustomClipRectImage"),
+        title: const Text("CustomClipRectImage"),
       ),
       body: Center(
           child: ClipRect(
