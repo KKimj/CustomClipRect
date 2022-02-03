@@ -48,15 +48,15 @@ class _CustomClipRectImageState extends State<CustomClipRectImage> {
 }
 
 class CustomClipRect extends CustomClipper<Rect> {
-  CustomClipRect(
+  const CustomClipRect(
       {required this.left,
       required this.top,
       required this.right,
       required this.bottom});
-  late double left;
-  late double top;
-  late double right;
-  late double bottom;
+  final double left;
+  final double top;
+  final double right;
+  final double bottom;
   @override
   Rect getClip(Size size) {
     Rect rect = Rect.fromPoints(
