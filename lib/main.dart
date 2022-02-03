@@ -24,16 +24,28 @@ class CustomClipRectImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // const double width = 1920;
+    // const double height = 1080;
+    const double left = 300;
+    const double top = 200;
+    const double right = 400;
+    const double bottom = 100;
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(
         title: const Text("CustomClipRectImage"),
       ),
       body: Center(
+        child: SizedOverflowBox(
+          size: const Size(0, 0),
           child: ClipRect(
-        // Input value
-        clipper: const CustomClipRect(left: 0, top: 0, right: 0, bottom: 0),
-        child: Image.network("https://wallpaperaccess.com/full/109666.jpg"),
-      )),
+            // Input value
+            clipper: const CustomClipRect(
+                left: left, top: top, right: right, bottom: bottom),
+            child: Image.network("https://wallpaperaccess.com/full/109666.jpg"),
+          ),
+        ),
+      ),
     );
   }
 }
